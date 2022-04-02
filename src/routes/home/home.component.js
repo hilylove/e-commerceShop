@@ -1,4 +1,4 @@
-import Directory from "../../directory/directory.component";
+import Directory from "../../components/directory/directory.component";
 
 const Home = () => {
   const categories = [
@@ -28,7 +28,11 @@ const Home = () => {
       imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
     },
   ];
-  return <Directory categories={categories} />;
+  return (
+    <div>
+      <Directory categories={categories} />
+    </div>
+  );
 };
 
 export default Home;
